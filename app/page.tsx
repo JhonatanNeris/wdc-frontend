@@ -52,7 +52,7 @@ export default function Home() {
           </div>
 
           {/* MOBILE */}
-          <div className="flex sm:hidden flex-col items-center gap-3">
+          <div className="flex sm:hidden flex-col items-center gap-3 text-white">
             <Image
               src="/logofull.svg"
               alt="Logo"
