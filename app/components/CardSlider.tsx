@@ -37,7 +37,7 @@ const CardSlider = ({ src, title, text }: Props) => {
         />
 
         <div className='px-6'>
-          <h2 className='text-[#D4C47E] text-[22px] mb-1 uppercase'>{title}</h2>
+          <h1 className='text-[#D4C47E] text-[22px] mb-1 uppercase'>{title}</h1>
           <p className='text-[#D9D9D9] text-[16px] mb-5'>{text}</p>
         </div>
 

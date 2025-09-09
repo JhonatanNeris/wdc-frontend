@@ -37,7 +37,7 @@ export default function Home() {
               height={300}
               className="mb-6 w-[404px] h-auto"
             />
-            <h2 className="text-[28px] leading-[1.2] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
+            <h2 className="text-[28px] leading-[1.2] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula on-line e gratuita, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima para todas as mulheres que se preocupam em desenvolver a própria intimidade.</h2>
             <br />
             <p className="text-[28px] leading-[1.2]  text-[#fff]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
@@ -47,7 +47,7 @@ export default function Home() {
               <EmailCapture color="#D4C47E" />
             </div>
 
-            <span className="uppercase text-[12px] mt-4  text-[#fff]">
+            <span className="uppercase text-[12px] mt-1 text-[#fff] tracking-wider">
               Não se preocupe, seus dados estão protegidos de acordo com a lei LGPD.
             </span>
           </div>
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Divisor/>
+      <Divisor />
 
       {/* SEGUNDA SEÇÃO */}
       <section className="bg-[#E5E5E5] bg-[url('/talvez1.svg')] bg-cover bg-center sm:bg-[url('/talvez1.svg')]">
@@ -97,7 +97,7 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-              
+
               {/* Slider */}
               <Carousel opts={{ align: "start" }}>
                 <CarouselContent>
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
       </section >
 
-      <Divisor/>
+      <Divisor />
 
       {/* QUARTA SEÇÃO */}
       < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative" >
@@ -210,8 +210,8 @@ export default function Home() {
               />
               <div className="text-white">
                 {/* somente desktop */}
-                <h2 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h2>
-
+                <h1 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h1>
+                <br />
                 <p className="text-[18px] sm:text-[24px]">Cátia Damasceno é fisioterapeuta especializada em uroginecologia, e iniciou seu trabalho ensinando exercícios de Ginástica Íntima para o fortalecimento da musculatura de mulheres com problema de flacidez íntima após o parto.</p>
                 <br />
                 <p className="text-[18px] sm:text-[24px]">Desde então, se especializou em Ginástica Íntima feminina e, ao longo de mais de 15 anos de carreira, seus cursos e palestras já ajudaram milhares de mulheres pelo Brasil. Ao todo, são mais de 150 mil alunas participando ativamente das suas metodologias.</p>
