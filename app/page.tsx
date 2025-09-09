@@ -19,7 +19,7 @@ export default function Home() {
     <>
       {/* PRIMEIRA SEÇÃO */}
       <section className="bg-[url('/bg1cel.svg')] bg-cover bg-center h-[100vh] sm:bg-[url('/bg1.png')]">
-        <div className="container mx-auto max-w-[1200px] px-4 pt-5 pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
+        <div className="container mx-auto max-w-[1200px] px-5 pt-5 pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
           {/* DESKTOP */}
           <div className="hidden sm:flex flex-col mt-30">
             <Image
@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
           {/* MOBILE */}
-          <div className="flex sm:hidden flex-col items-center">
+          <div className="flex sm:hidden flex-col items-center gap-3">
             <Image
               src="/logofull.svg"
               alt="Logo"
@@ -53,13 +53,12 @@ export default function Home() {
               height={300}
               className="mx-auto mb-4 w-[180px] h-auto"
             />
-            <h1 className="font-bold text-[31px]">Meu Curso de Ginástica Íntima gratuito dia 13/08</h1>
+            <h1 className="font-bold text-[31px] leading-[1]">Meu Curso de Ginástica Íntima gratuito dia 13/08</h1>
             <h2>Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
 
-            {/* form */}
-            {/* <span>
-              Não se preocupe, seus dados estão protegidos de acordo com a lei LGPD.
-            </span> */}
+            <div className="w-full my-5">
+              <EmailCapture color="#D4C47E" />
+            </div>            
           </div>
         </div>
       </section>
@@ -68,7 +67,7 @@ export default function Home() {
       <section className="bg-[url('/talvez1.svg')] bg-cover bg-center h-[100vh]">
         <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center">
           <div className="flex flex-col items-center px-[20px]">
-            <div className="-mt-[50px] flex flex-col gap-6 w-full">
+            <div className="-mt-[60px] flex flex-col gap-6 w-full">
               {/* bloco azul */}
               <div className="
                   bg-[url('/Rectangle.svg')] bg-cover bg-center
@@ -124,7 +123,7 @@ export default function Home() {
           <div className="flex flex-col items-center px-[20px]">
             <div className="flex flex-col sm:flex-col-reverse gap-6">
               <div className="bg-[#D4C47E] w-[40px] h-[4px] mx-auto mb-4 rounded-full">
-                
+
               </div>
               <h2 className="text-center text-[#fff] font-bold text-[18px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
             </div>
@@ -168,9 +167,9 @@ export default function Home() {
 
       {/* QUARTA SEÇÃO  */}
       <section className="bg-[#1A18BB] bg-cover bg-center">
-        <div className="container max-w-[1200px] mx-auto pt-20">
-          <div className="flex flex-col items-center px-[20px] sm:flex-row sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
-            <div className="flex flex-col px-[20px] sm:flex-row sm:gap-10 sm:items-center">
+        <div className="container max-w-[1200px] mx-auto">
+          <div className="flex flex-col items-center px-[20px] sm:flex-row sm:grid sm:grid-cols-2  sm:text-left sm:items-center">
+            <div className="flex flex-col sm:flex-row sm:gap-10 sm:items-center">
               <Image
                 src="/arrowup.svg"
                 alt="Logo"
