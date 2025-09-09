@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
       {/* PRIMEIRA SEÇÃO */}
-      <section className="bg-[url('/bg1cel.svg')] bg-cover bg-bottom bg-no-repeat h-[100vh] sm:bg-[url('/bg1.png')]">
+      <section className="bg-[url('/bg1cel.svg')] bg-cover bg-bottom bg-no-repeat h-[100vh] sm:bg-[url('/bg.svg')]">
         <div className="container mx-auto max-w-[1200px] px-5 pt-5 pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
           {/* DESKTOP */}
           <div className="hidden sm:flex flex-col mt-30">
