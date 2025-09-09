@@ -10,6 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Divisor from "./components/Divisor";
 
 
 
@@ -70,16 +71,18 @@ export default function Home() {
         </div>
       </section>
 
+      <Divisor/>
+
       {/* SEGUNDA SEÇÃO */}
       <section className="bg-[#E5E5E5] bg-[url('/talvez1.svg')] bg-cover bg-center sm:bg-[url('/talvez1.svg')]">
         <div className="container mx-auto max-w-[1200px] pt-5 pb-5 sm:pb-20 text-center">
           <div className="flex flex-col items-center ">
             <div className="-mt-[60px] flex flex-col gap-6 w-full px-[20px]">
-              {/* bloco azul */}
+              {/* Bloco azul */}
               <div className="
-                  bg-[url('/Rectangle.svg')] bg-cover bg-center
+                  bg-[url('/bgblue.svg')] bg-cover bg-center
                   bg-[#1A18BB] bg-blend-overlay
-                  text-center rounded-2xl p-7 text-white border-[4px] border-[#D4C47E]
+                  text-center rounded-2xl px-7 py-7 sm:px-15 text-white border-[4px] border-[#D4C47E]
                                     
                 ">
                 <h1 className="font-bold text-[28px] sm:text-[38px] text-[#D4C47E] leading-[1.2]">O que você vai aprender nas Pompolimpíadas</h1>
@@ -137,6 +140,8 @@ export default function Home() {
         </div>
       </section >
 
+      <Divisor/>
+
       {/* QUARTA SEÇÃO */}
       < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative" >
         <Image
@@ -146,13 +151,12 @@ export default function Home() {
           height={50}
           className=" mb-4 w-[300px] h-auto absolute hidden sm:block z-0"
         />
-        <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center z-30 relative">
+        <div className="container mx-auto max-w-[1200px] pt-15 pb-10 text-center z-30 relative">
           <div className="flex flex-col items-center px-[20px]">
-            <div className="flex flex-col sm:flex-col-reverse gap-6">
+            <div className="flex flex-col sm:flex-col-reverse gap-3">
               <div className="bg-[#D4C47E] w-[40px] h-[4px] mx-auto mb-4 rounded-full">
-
               </div>
-              <h2 className="text-center text-[#fff] font-bold text-[18px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
+              <h2 className="text-center text-[#fff] font-bold text-[18px] max-w-[986px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
             </div>
             <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase w-[240px]">
               <span>ppk sedentária</span>
@@ -191,6 +195,8 @@ export default function Home() {
 
         </div>
       </section >
+
+      <Divisor />
 
       {/* QUARTA SEÇÃO  */}
       < section className="bg-[#1A18BB] bg-cover bg-center" >
