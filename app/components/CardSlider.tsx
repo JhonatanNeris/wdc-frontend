@@ -6,26 +6,42 @@ type Props = {
   text: string;
 };
 
+const BORDER_PX = 4; 
+
+
 const CardSlider = ({ src, title, text }: Props) => {
   return (
-    <div className='w-[270px] h-full border-4 border-[#D4C47E] rounded-2xl bg-[#1A18BB] flex flex-col relative overflow-hidden'>
+    <div className='w-[270px] h-full border-4 border-[#D4C47E] rounded-2xl bg-[#1A18BB] flex flex-col relative justify-between '>
       {/* <div className=" w-[270px] border-4 border-[#D4C47E] rounded-2xl flex justify-center items-center"> */}
-      <div className="flex items-center justify-center">
+      <div className="bg-[#D4C47E] rounded-2xl relative">
+        {/* IMAGEM DO ESPORTE */}
         <Image
           src={src}
           alt="Esporte"
           width={270}
           height={270}
-          className=" w-full object-cover h-auto border-4 border-[#D4C47E] rounded-2xl"
+          className=" w-full object-cover block h-[215px]"
+        />
+        {/* BANDEIRA */}
+        <Image
+          src="/BR.svg"
+          alt="Bandeira brasileira"
+          width={270}
+          height={270}
+          className=" w-[20px] h-auto absolute top-6 right-6 z-10"
+        />
+
+        {/* BORDA DA FOTO exatamente sobre a borda externa */}
+        <div
+          className="pointer-events-none absolute z-10 rounded-2xl border-4 border-[#D4C47E]"
+          style={{
+            top: -BORDER_PX,
+            left: -BORDER_PX,
+            right: -BORDER_PX,
+            height: 215 + BORDER_PX, // cobre a altura da imagem + metade da borda de baixo
+          }}
         />
       </div>
-      <Image
-        src="/BR.svg"
-        alt="Bandeira brasileira"
-        width={270}
-        height={270}
-        className=" w-[20px] h-auto absolute top-6 right-6 z-10"
-      />
 
       <div className="flex flex-1 flex-col text-center h-full justify-between">
         <>

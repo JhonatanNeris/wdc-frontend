@@ -102,7 +102,7 @@ export default function Home() {
               <Carousel opts={{ align: "start" }}>
                 <CarouselContent>
                   {slides.map((s) => (
-                    <CarouselItem key={s.id} className="basis-[80%] sm:basis-1/4">
+                    <CarouselItem key={s.id} className="basis-[80%] md:basis-1/4 sm:basis-1/2">
                       <CardSlider src={s.src} title={s.title} text={s.text} />
                     </CarouselItem>
                   ))}

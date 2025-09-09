@@ -44,7 +44,7 @@ export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
         {/* botão absoluto à direita, não sobrepõe o texto */}
         <button
           type="submit"
-          className="absolute right-0 top-0 grid place-items-center h-14 w-[var(--btn-w)]"
+          className="absolute right-0 top-0 grid place-items-center h-14 w-[var(--btn-w)] cursor-pointer transition-transform active:scale-95"
           aria-label="Enviar e-mail"
           title="Enviar"
           style={{
