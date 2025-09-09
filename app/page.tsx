@@ -55,6 +55,7 @@ export default function Home() {
               width={300}
               height={300}
               className="mx-auto mb-4 w-[180px] h-auto"
+              priority
             />
             <h1 className="font-bold text-[31px] leading-[1]">Meu Curso de Ginástica Íntima gratuito dia 13/08</h1>
             <h2 className="font-[300]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
@@ -69,13 +70,13 @@ export default function Home() {
       <Divisor />
 
       {/* SEGUNDA SEÇÃO */}
-      <section className="bg-[#E5E5E5] bg-[url('/talvez1.svg')] bg-cover bg-center sm:bg-[url('/talvez1.svg')]">
+      <section className="bg-[#E5E5E5] bg-[url('/talvez1.jpg')] bg-cover bg-center ">
         <div className="container mx-auto max-w-[1200px] pt-5 pb-5 sm:pb-20 text-center">
           <div className="flex flex-col items-center ">
             <div className="-mt-[60px] flex flex-col gap-6 w-full px-[20px]">
               {/* Bloco azul */}
               <div className="
-                  bg-[url('/bgblue.svg')] bg-cover bg-center
+                  bg-[url('/bgblue.png')] bg-cover bg-center
                   bg-[#1A18BB] bg-blend-overlay
                   text-center rounded-2xl px-7 py-7 sm:px-15 text-white border-[4px] border-[#D4C47E]
                                     
@@ -96,7 +97,6 @@ export default function Home() {
               {/* Slider */}
               <SlidesCarousel slides={slides} />
 
-
               {/* Arrows(sinalizador de slider) - SOMENTE MOBILE */}
               <Image
                 src="/arrowleftandright.svg"
@@ -112,7 +112,7 @@ export default function Home() {
       </section >
 
       {/* TERCEIRA SEÇÃO - APENAS MOBILE*/}
-      < section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center sm:hidden" >
+      < section className="bg-[url('/Rectangle1597.jpg')] bg-cover bg-center sm:hidden" >
         <div className="container mx-auto pt-10 pb-15 text-center">
           <div className="flex flex-col items-center px-[20px]">
             <h2 className="text-center text-[#1A18BB] font-extrabold text-[18px]">Para aprender tudo isso e treinar comigo, ao vivo, todos os exercícios do meu curso de Ginástica Íntima, basta cadastrar o seu e-mail gratuitamente.</h2>
