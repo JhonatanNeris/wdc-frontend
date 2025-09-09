@@ -29,7 +29,7 @@ export default function Home() {
               height={300}
               className="mb-6 w-[404px] h-auto"
             />
-            <h2 className="text-[28px] leading-[1.2] font-nunito">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
+            <h2 className="text-[28px] leading-[1.2]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
             <br />
             <p className="text-[28px] leading-[1.2]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
@@ -118,32 +118,39 @@ export default function Home() {
           alt="Medalhas"
           width={50}
           height={50}
-          className=" mb-4 w-[300px] h-auto absolute hidden sm:block"
+          className=" mb-4 w-[300px] h-auto absolute hidden sm:block z-0"
         />
-        <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center">
+        <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center z-30 relative">
           <div className="flex flex-col items-center px-[20px]">
-            <h2 className="text-center text-[#fff] font-bold text-[18px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
-            <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase">
+            <div className="flex flex-col sm:flex-col-reverse gap-6">
+              <div className="bg-[#D4C47E] w-[40px] h-[4px] mx-auto mb-4 rounded-full">
+                
+              </div>
+              <h2 className="text-center text-[#fff] font-bold text-[18px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
+            </div>
+            <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase w-[240px]">
               <span>ppk sedentária</span>
             </div>
-            <div className="grid grid-cols-1 gap-4 mt-5 mb-5">
-              <CardDescription text="É muito mais molhadinha" color="#fff" />
+            <div className="grid grid-cols-1 gap-4 mt-5 mb-5 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-4">
+              <CardDescription text="Não sente vontade de ter relaçao íntima" color="#fff" />
               <CardDescription text="Não tem lubrificação" color="#fff" />
               <CardDescription text="Tem escape de urina quando faz esforço" color="#fff" />
               <CardDescription text="Solta buceidos durante a relação (flatos)" color="#fff" />
               <CardDescription text="Sente fortes cólicas menstruais todos os meses" color="#fff" />
               <CardDescription text="Sente dor na hora da relação" color="#fff" />
             </div>
-            <div className="bg-none rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#fff] font-extrabold text-[15px] uppercase">
+            <div className="bg-none rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#fff] font-extrabold text-[15px] uppercase w-[240px]">
               <span>ppk atleta</span>
             </div>
-            <div>
+            <div className="grid grid-cols-1 gap-4 mt-5 mb-5 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-4">
               <CardDescription text="É muito mais molhadinha" />
-              <CardDescription text="É muito mais molhadinha" />
-              <CardDescription text="É muito mais molhadinha" />
-              <CardDescription text="É muito mais molhadinha" />
-              <CardDescription text="É muito mais molhadinha" />
-              <CardDescription text="É muito mais molhadinha" />
+              <CardDescription text="Sente muito mais vontade de ter relação" />
+              <CardDescription text="Não sofre com cólicas menstruais" />
+              <CardDescription text="É altamente orgástica" />
+              <CardDescription text="É mais preparada para lidar com os sintomas da menopausa" />
+              <CardDescription text="Não tem escape de urina causado pela frouxidão íntima" />
+              <CardDescription text="Não sofre com infecçõesde recorrência" />
+              <CardDescription text="Fica muito mais resistente no pré e no pós-parto" />
             </div>
           </div>
 
@@ -153,7 +160,7 @@ export default function Home() {
             alt="Logo"
             width={50}
             height={50}
-            className="mx-auto mb-4 w-[50px] h-auto"
+            className="mx-auto mb-4 w-[50px] h-auto mt-5"
           />
 
         </div>
