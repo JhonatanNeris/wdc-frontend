@@ -97,10 +97,8 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-
-
-              {/* <SliderEmbla slides={slides} /> */}
-
+              
+              {/* Slider */}
               <Carousel opts={{ align: "start" }}>
                 <CarouselContent>
                   {slides.map((s) => (
@@ -201,7 +199,7 @@ export default function Home() {
       {/* QUARTA SEÇÃO  */}
       < section className="bg-[#1A18BB] bg-cover bg-center" >
         <div className="container max-w-[1200px] mx-auto">
-          <div className="flex flex-col items-center px-[20px] sm:flex-row sm:grid sm:grid-cols-2  sm:text-left sm:items-center">
+          <div className="flex flex-col items-center px-[20px] pt-20 sm:pt-0 sm:flex-row sm:grid sm:grid-cols-2  sm:text-left sm:items-center">
             <div className="flex flex-col sm:flex-row sm:gap-10 sm:items-center">
               <Image
                 src="/arrowup.svg"
