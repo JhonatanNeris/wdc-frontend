@@ -71,10 +71,10 @@ export default function Home() {
       </section>
 
       {/* SEGUNDA SEÇÃO */}
-      <section className="bg-[url('/talvez1.svg')] bg-cover bg-center h-[100vh]">
-        <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center">
-          <div className="flex flex-col items-center px-[20px]">
-            <div className="-mt-[60px] flex flex-col gap-6 w-full">
+      <section className="bg-[#E5E5E5] bg-[url('/talvez1.svg')] bg-cover bg-center sm:bg-[url('/talvez1.svg')]">
+        <div className="container mx-auto max-w-[1200px] pt-5 pb-5 sm:pb-20 text-center">
+          <div className="flex flex-col items-center ">
+            <div className="-mt-[60px] flex flex-col gap-6 w-full px-[20px]">
               {/* bloco azul */}
               <div className="
                   bg-[url('/Rectangle.svg')] bg-cover bg-center
@@ -110,12 +110,22 @@ export default function Home() {
                 <CarouselNext />
               </Carousel>
 
+
+              {/* Arrows(sinalizador de slider) - SOMENTE MOBILE */}
+              <Image
+                src="/arrowleftandright.svg"
+                alt="Logo"
+                width={300}
+                height={300}
+                className="mx-auto w-[180px] h-auto my-1 sm:hidden"
+              />
+
             </div>
           </div>
         </div>
       </section >
 
-      {/* TERCEIRA SEÇÃO  - MOBILE*/}
+      {/* TERCEIRA SEÇÃO - APENAS MOBILE*/}
       < section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center sm:hidden" >
         <div className="container mx-auto pt-5 pb-10 text-center">
           <div className="flex flex-col items-center px-[20px]">
