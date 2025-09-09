@@ -34,7 +34,7 @@ const CardSlider = ({ src, title, text }: Props) => {
             alt="Seta"
             width={270}
             height={270}
-            className=" my-5 w-[122px] h-auto mx-auto"
+            className=" mt-5 mb-1 w-[122px] h-auto mx-auto"
           />
 
           <div className='px-6'>
