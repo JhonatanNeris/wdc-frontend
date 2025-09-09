@@ -95,18 +95,16 @@ export default function Home() {
                 </p>
               </div>
 
-              {/* SLIDER */}
-
 
               {/* <SliderEmbla slides={slides} /> */}
 
-              <Carousel>
+              <Carousel opts={{ align: "start" }}>
                 <CarouselContent>
                   {slides.map((s) => (
-                    <CarouselItem key={s.id}>
+                    <CarouselItem key={s.id} className="basis-[80%] sm:basis-1/4">
                       <CardSlider src={s.src} title={s.title} text={s.text} />
-                    </CarouselItem>))
-                  }
+                    </CarouselItem>
+                  ))}
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
@@ -222,7 +220,7 @@ export default function Home() {
 
       {/* FOOTER */}
       < footer className="bg-[#D4C47E]" >
-        <div className="container mx-auto max-w-[1200px] text-black p-5 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
+        <div className="container mx-auto max-w-[1200px] text-black py-8 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
           <p>suporte@mulheresbemresolvidas.com.br | CNPJ: 23.705.563.0001/80. SHTN Bloco D RUV, SHCS CLS 216 - Asa Sul, Brasília - DF, 70294-530</p>
           <Image
             src="/logopreto.svg"

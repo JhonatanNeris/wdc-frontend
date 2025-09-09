@@ -47,7 +47,7 @@ const CardSlider = ({ src, title, text }: Props) => {
         width={270}
         height={270}
         // className=" w-[270px] h-auto"
-        className="h-9 w-[270px] object-cover"
+        className="h-9 w-[270px] object-cover "
 
       />
     </div>
