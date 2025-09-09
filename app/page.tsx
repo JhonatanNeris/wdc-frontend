@@ -4,6 +4,8 @@ import CardSlider from "./components/CardSlider";
 import SliderEmbla from "./components/SliderEmbla";
 import EmailCapture from "./components/EmailCapture";
 
+
+
 const slides = [
   { id: 1, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
   { id: 2, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
@@ -27,7 +29,7 @@ export default function Home() {
               height={300}
               className="mb-6 w-[404px] h-auto"
             />
-            <h2 className="text-[28px] leading-[1.2]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
+            <h2 className="text-[28px] leading-[1.2] font-nunito">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
             <br />
             <p className="text-[28px] leading-[1.2]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
@@ -124,14 +126,24 @@ export default function Home() {
             <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase">
               <span>ppk sedentária</span>
             </div>
-            <div>
-              <CardDescription />
+            <div className="grid grid-cols-1 gap-4 mt-5 mb-5">
+              <CardDescription text="É muito mais molhadinha" color="#fff" />
+              <CardDescription text="Não tem lubrificação" color="#fff" />
+              <CardDescription text="Tem escape de urina quando faz esforço" color="#fff" />
+              <CardDescription text="Solta buceidos durante a relação (flatos)" color="#fff" />
+              <CardDescription text="Sente fortes cólicas menstruais todos os meses" color="#fff" />
+              <CardDescription text="Sente dor na hora da relação" color="#fff" />
             </div>
             <div className="bg-none rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#fff] font-extrabold text-[15px] uppercase">
               <span>ppk atleta</span>
             </div>
             <div>
-              <CardDescription />
+              <CardDescription text="É muito mais molhadinha" />
+              <CardDescription text="É muito mais molhadinha" />
+              <CardDescription text="É muito mais molhadinha" />
+              <CardDescription text="É muito mais molhadinha" />
+              <CardDescription text="É muito mais molhadinha" />
+              <CardDescription text="É muito mais molhadinha" />
             </div>
           </div>
 

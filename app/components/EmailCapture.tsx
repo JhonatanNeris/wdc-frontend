@@ -2,12 +2,12 @@
 import { FormEvent, useState } from "react";
 
 // Colors pulled to match the reference as closely as possible
-const BLUE = "#1c2acb"; // deep royal blue used for text and button
+const BLUE = "#1A18BB"; // deep royal blue used for text and button
 interface EmailCaptureProps { 
     color? : string;
 }
 
-export default function EmailCapture({ color = "#1c2acb" }: EmailCaptureProps) {
+export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -31,7 +31,7 @@ export default function EmailCapture({ color = "#1c2acb" }: EmailCaptureProps) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Digite aqui o seu melhor e-mail"
-          className="flex-1 h-14 px-4 pr-20 font-semibold placeholder:font-bold focus:outline-none"
+          className="flex-1 h-14 px-4 pr-20 font-semibold placeholder:font-bold placeholder:text-[#1A18BB]  focus:outline-none"
           style={{ color: BLUE, caretColor: BLUE, WebkitTextSizeAdjust: "100%" }}
         />
 
