@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 const nunito = Nunito_Sans({
   subsets: ['latin'],
-  variable: '--font-nunito-text'
+  variable: '--font-nunito-text',
+
 })
 
 const parisFont = localFont({

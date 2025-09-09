@@ -37,9 +37,9 @@ export default function Home() {
               height={300}
               className="mb-6 w-[404px] h-auto"
             />
-            <h2 className="text-[28px] leading-[1.2] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula on-line e gratuita, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima para todas as mulheres que se preocupam em desenvolver a própria intimidade.</h2>
+            <h2 className="text-[28px] leading-[1.2] font-[300] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula on-line e gratuita, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima para todas as mulheres que se preocupam em desenvolver a própria intimidade.</h2>
             <br />
-            <p className="text-[28px] leading-[1.2]  text-[#fff]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
+            <p className="text-[28px] leading-[1.2] font-[300] text-[#fff]"><span className="text-[28px] font-bold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
             {/* form */}
 
@@ -62,7 +62,7 @@ export default function Home() {
               className="mx-auto mb-4 w-[180px] h-auto"
             />
             <h1 className="font-bold text-[31px] leading-[1]">Meu Curso de Ginástica Íntima gratuito dia 13/08</h1>
-            <h2>Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
+            <h2 className="font-[300]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
 
             <div className="w-full my-5">
               <EmailCapture color="#D4C47E" />
@@ -86,7 +86,7 @@ export default function Home() {
                                     
                 ">
                 <h1 className="font-bold text-[28px] sm:text-[38px] text-[#D4C47E] leading-[1.2]">O que você vai aprender nas Pompolimpíadas</h1>
-                <p className="mt-4 text-white text-[16px] sm:text-[24px] leading-[1.4]">
+                <p className="mt-4 text-white text-[16px] sm:text-[24px] leading-[1.4] font-[300]">
                   Participe da superaula gratuita de Ginástica Íntima no dia 13 de
                   agosto, às 20h; e tenha acesso a todo o conteúdo do curso. Aprenda a
                   dominar a arte do aperta e solta e conquiste o ouro em saúde íntima,
@@ -128,9 +128,9 @@ export default function Home() {
 
       {/* TERCEIRA SEÇÃO - APENAS MOBILE*/}
       < section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center sm:hidden" >
-        <div className="container mx-auto pt-5 pb-10 text-center">
+        <div className="container mx-auto pt-10 pb-15 text-center">
           <div className="flex flex-col items-center px-[20px]">
-            <h2 className="text-center text-[#1A18BB] font-bold text-[18px]">Para aprender tudo isso e treinar comigo, ao vivo, todos os exercícios do meu curso de Ginástica Íntima, basta cadastrar o seu e-mail gratuitamente.</h2>
+            <h2 className="text-center text-[#1A18BB] font-extrabold text-[18px]">Para aprender tudo isso e treinar comigo, ao vivo, todos os exercícios do meu curso de Ginástica Íntima, basta cadastrar o seu e-mail gratuitamente.</h2>
             {/* campo de email */}
             <EmailCapture />
           </div>
@@ -141,13 +141,27 @@ export default function Home() {
       <Divisor />
 
       {/* QUARTA SEÇÃO */}
-      < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative" >
+      < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative overflow-hidden" >
         <Image
           src="/medal.svg"
           alt="Medalhas"
           width={50}
           height={50}
           className=" mb-4 w-[300px] h-auto absolute hidden sm:block z-0"
+        />
+        <Image
+          src="/medalhas.svg"
+          alt="Medalhas"
+          width={50}
+          height={50}
+          className=" mb-4 w-[200px] h-auto absolute sm:hidden z-0 top-0 -right-35"
+        />
+        <Image
+          src="/medalhas.svg"
+          alt="Medalhas"
+          width={50}
+          height={50}
+          className=" mb-4 w-[200px] h-auto absolute sm:hidden z-0 top-0 -left-39"
         />
         <div className="container mx-auto max-w-[1200px] pt-15 pb-10 text-center z-30 relative">
           <div className="flex flex-col items-center px-[20px]">
@@ -212,11 +226,11 @@ export default function Home() {
                 {/* somente desktop */}
                 <h1 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h1>
                 <br />
-                <p className="text-[18px] sm:text-[24px]">Cátia Damasceno é fisioterapeuta especializada em uroginecologia, e iniciou seu trabalho ensinando exercícios de Ginástica Íntima para o fortalecimento da musculatura de mulheres com problema de flacidez íntima após o parto.</p>
+                <p className="text-[18px] sm:text-[24px] font-[300]">Cátia Damasceno é fisioterapeuta especializada em uroginecologia, e iniciou seu trabalho ensinando exercícios de Ginástica Íntima para o fortalecimento da musculatura de mulheres com problema de flacidez íntima após o parto.</p>
                 <br />
-                <p className="text-[18px] sm:text-[24px]">Desde então, se especializou em Ginástica Íntima feminina e, ao longo de mais de 15 anos de carreira, seus cursos e palestras já ajudaram milhares de mulheres pelo Brasil. Ao todo, são mais de 150 mil alunas participando ativamente das suas metodologias.</p>
+                <p className="text-[18px] sm:text-[24px] font-[300]">Desde então, se especializou em Ginástica Íntima feminina e, ao longo de mais de 15 anos de carreira, seus cursos e palestras já ajudaram milhares de mulheres pelo Brasil. Ao todo, são mais de 150 mil alunas participando ativamente das suas metodologias.</p>
                 <br />
-                <p className="text-[18px] sm:text-[24px]">Atualmente, Cátia é bastante reconhecida por esse trabalho e se tornou a precursora da Ginástica Íntima no Brasil, tornando-se a maior referência nacional no assunto. Já participou de vários programas influentes na mídia, como o “Programa do Jô”, “Tonight Show'' na CNN, “Se Joga”, também da Rede Globo, e vários outros.</p>
+                <p className="text-[18px] sm:text-[24px] font-[300]">Atualmente, Cátia é bastante reconhecida por esse trabalho e se tornou a precursora da Ginástica Íntima no Brasil, tornando-se a maior referência nacional no assunto. Já participou de vários programas influentes na mídia, como o “Programa do Jô”, “Tonight Show'' na CNN, “Se Joga”, também da Rede Globo, e vários outros.</p>
               </div>
             </div>
             <div className="relative">
