@@ -1,5 +1,4 @@
-"use client";
-import { FormEvent, useState, CSSProperties } from "react";
+import { CSSProperties } from "react";
 
 const BLUE = "#1A18BB";
 
@@ -8,8 +7,6 @@ interface EmailCaptureProps {
 }
 
 export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
-  const [email, setEmail] = useState("");
-
   function getTextColor(bg: string): string {
     const hex = bg.replace("#", "");
     const r = parseInt(hex.substring(0, 2), 16);
@@ -19,8 +16,9 @@ export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
     return luminance > 0.5 ? BLUE : "#fff";
   }
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  async function handleSubmit(formData: FormData) {
+    "use server";
+    const email = String(formData.get("email"));
     console.log({ email });
   }
 
@@ -28,7 +26,7 @@ export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
   const vars: CSSProperties = { ["--btn-w" as any]: "124px" };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full" aria-label="Formulário de captura de e-mail">
+    <form action={handleSubmit} className="w-full" aria-label="Formulário de captura de e-mail">
       <div className="relative flex items-stretch bg-white shadow-sm overflow-hidden" style={vars}>
         <input
           id="email"
@@ -37,8 +35,6 @@ export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
           inputMode="email"
           autoComplete="email"
           required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
           placeholder="Digite aqui o seu melhor e-mail"
           className="flex-1 h-14 px-4 pr-[var(--btn-w)] font-semibold placeholder:font-bold placeholder:text-[#1A18BB] placeholder:text-sm focus:outline-none"
           style={{ color: BLUE, caretColor: BLUE, WebkitTextSizeAdjust: "100%" }}
