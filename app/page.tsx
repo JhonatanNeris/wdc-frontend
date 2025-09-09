@@ -1,16 +1,10 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import CardDescription from "./components/CardDescription";
-import CardSlider from "./components/CardSlider";
 import EmailCapture from "./components/EmailCapture";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import Divisor from "./components/Divisor";
+
+const SlidesCarousel = dynamic(() => import("./components/SlidesCarousel"));
 
 
 
@@ -100,17 +94,7 @@ export default function Home() {
               </div>
 
               {/* Slider */}
-              <Carousel opts={{ align: "start" }}>
-                <CarouselContent>
-                  {slides.map((s) => (
-                    <CarouselItem key={s.id} className="basis-[80%] md:basis-1/4 sm:basis-1/2">
-                      <CardSlider src={s.src} title={s.title} text={s.text} />
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
+              <SlidesCarousel slides={slides} />
 
 
               {/* Arrows(sinalizador de slider) - SOMENTE MOBILE */}
