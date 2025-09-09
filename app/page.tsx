@@ -2,6 +2,7 @@ import Image from "next/image";
 import CardDescription from "./components/CardDescription";
 import CardSlider from "./components/CardSlider";
 import SliderEmbla from "./components/SliderEmbla";
+import EmailCapture from "./components/EmailCapture";
 
 const slides = [
   { id: 1, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <>
       {/* PRIMEIRA SEÇÃO */}
-      <section className="bg-[url('/bg1cel.svg')] bg-cover bg-center h-[100dvh] sm:bg-[url('/bg1.png')]">
+      <section className="bg-[url('/bg1cel.svg')] bg-cover bg-center h-[100vh] sm:bg-[url('/bg1.png')]">
         <div className="container mx-auto max-w-[1200px] px-4 pt-5 pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
           {/* DESKTOP */}
           <div className="hidden sm:flex flex-col mt-30">
@@ -31,6 +32,11 @@ export default function Home() {
             <p className="text-[28px] leading-[1.2]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
             {/* form */}
+
+            <div className="w-full my-5">
+              <EmailCapture color="#D4C47E" />
+            </div>
+
             <span className="uppercase text-[12px] mt-4">
               Não se preocupe, seus dados estão protegidos de acordo com a lei LGPD.
             </span>
@@ -59,8 +65,8 @@ export default function Home() {
       {/* SEGUNDA SEÇÃO */}
       <section className="bg-[url('/talvez1.svg')] bg-cover bg-center h-[100vh]">
         <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center">
-          <div className="flex flex-col items-center px-[20px] relative">
-            <div className="absolute top-[-50px] flex flex-col gap-6">
+          <div className="flex flex-col items-center px-[20px]">
+            <div className="-mt-[50px] flex flex-col gap-6 w-full">
               {/* bloco azul */}
               <div className="
                   bg-[url('/Rectangle.svg')] bg-cover bg-center
@@ -92,11 +98,12 @@ export default function Home() {
       </section>
 
       {/* TERCEIRA SEÇÃO  - MOBILE*/}
-      <section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center">
+      <section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center sm:hidden">
         <div className="container mx-auto pt-5 pb-10 text-center">
           <div className="flex flex-col items-center px-[20px]">
             <h2 className="text-center text-[#1A18BB] font-bold text-[18px]">Para aprender tudo isso e treinar comigo, ao vivo, todos os exercícios do meu curso de Ginástica Íntima, basta cadastrar o seu e-mail gratuitamente.</h2>
             {/* campo de email */}
+            <EmailCapture />
           </div>
 
         </div>
@@ -111,7 +118,7 @@ export default function Home() {
           height={50}
           className=" mb-4 w-[300px] h-auto absolute hidden sm:block"
         />
-        <div className="container mx-auto pt-5 pb-10 text-center">
+        <div className="container mx-auto max-w-[1200px] pt-5 pb-10 text-center">
           <div className="flex flex-col items-center px-[20px]">
             <h2 className="text-center text-[#fff] font-bold text-[18px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
             <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase">
@@ -142,32 +149,43 @@ export default function Home() {
 
       {/* QUARTA SEÇÃO  */}
       <section className="bg-[#1A18BB] bg-cover bg-center">
-        <div className="container mx-auto pt-20">
-          <div className="flex flex-col items-center px-[20px] sm:flex-row">
-            <div className="flex flex-col items-center px-[20px]">
-              {/* somente desktop */}
-              <h2 className="text-[#FFD964] font-bold text-[18px]">Quem vai te ensinar</h2>
+        <div className="container max-w-[1200px] mx-auto pt-20">
+          <div className="flex flex-col items-center px-[20px] sm:flex-row sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
+            <div className="flex flex-col px-[20px] sm:flex-row sm:gap-10 sm:items-center">
+              <Image
+                src="/arrowup.svg"
+                alt="Logo"
+                width={50}
+                height={50}
+                className="mx-auto mb-4 w-[50px] h-auto  hidden sm:block"
+              />
+              <div>
+                {/* somente desktop */}
+                <h2 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h2>
 
-              <p className="text-[18px]">Cátia Damasceno é fisioterapeuta especializada em uroginecologia, e iniciou seu trabalho ensinando exercícios de Ginástica Íntima para o fortalecimento da musculatura de mulheres com problema de flacidez íntima após o parto.</p>
-              <br />
-              <p className="text-[18px]">Desde então, se especializou em Ginástica Íntima feminina e, ao longo de mais de 15 anos de carreira, seus cursos e palestras já ajudaram milhares de mulheres pelo Brasil. Ao todo, são mais de 150 mil alunas participando ativamente das suas metodologias.</p>
-              <br />
-              <p className="text-[18px]">Atualmente, Cátia é bastante reconhecida por esse trabalho e se tornou a precursora da Ginástica Íntima no Brasil, tornando-se a maior referência nacional no assunto. Já participou de vários programas influentes na mídia, como o “Programa do Jô”, “Tonight Show'' na CNN, “Se Joga”, também da Rede Globo, e vários outros.</p>
+                <p className="text-[18px] sm:text-[24px]">Cátia Damasceno é fisioterapeuta especializada em uroginecologia, e iniciou seu trabalho ensinando exercícios de Ginástica Íntima para o fortalecimento da musculatura de mulheres com problema de flacidez íntima após o parto.</p>
+                <br />
+                <p className="text-[18px] sm:text-[24px]">Desde então, se especializou em Ginástica Íntima feminina e, ao longo de mais de 15 anos de carreira, seus cursos e palestras já ajudaram milhares de mulheres pelo Brasil. Ao todo, são mais de 150 mil alunas participando ativamente das suas metodologias.</p>
+                <br />
+                <p className="text-[18px] sm:text-[24px]">Atualmente, Cátia é bastante reconhecida por esse trabalho e se tornou a precursora da Ginástica Íntima no Brasil, tornando-se a maior referência nacional no assunto. Já participou de vários programas influentes na mídia, como o “Programa do Jô”, “Tonight Show'' na CNN, “Se Joga”, também da Rede Globo, e vários outros.</p>
+              </div>
             </div>
-            <Image
-              src="/Catia.svg"
-              alt="Logo"
-              width={800}
-              height={800}
-              className="mx-auto w-[240px] h-auto sm:w-[545px]"
-            />
+            <div className="relative">
+              <Image
+                src="/Catia.svg"
+                alt="Logo"
+                width={800}
+                height={800}
+                className="mx-auto w-[240px] h-auto sm:w-[575px]"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="bg-[#D4C47E]">
-        <div className="container mx-auto  text-black text-center p-4 flex flex-col sm:flex-row sm:gap-10 sm:items-center">
+        <div className="container mx-auto max-w-[1200px] text-black p-5 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
           <p>suporte@mulheresbemresolvidas.com.br | CNPJ: 23.705.563.0001/80. SHTN Bloco D RUV, SHCS CLS 216 - Asa Sul, Brasília - DF, 70294-530</p>
           <Image
             src="/logopreto.svg"

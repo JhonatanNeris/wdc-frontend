@@ -10,7 +10,7 @@ type Props = {
 
 const CardSlider = ({src, title, text} : Props) => {
   return (
-    <div className='w-[270px] border-4 border-[#D4C47E] rounded-2xl bg-[#1A18BB] flex flex-col relative overflow-hidden'>
+    <div className='w-[270px] border-4 border-[#D4C47E] rounded-2xl bg-[#1A18BB] flex flex-col relative overflow-hidden pt-[270px]"'>
 
       <Image
         src={src}
@@ -24,7 +24,7 @@ const CardSlider = ({src, title, text} : Props) => {
         alt="Esporte"
         width={270}
         height={270}
-        className=" w-[20px] h-auto absolute top-6 right-6"
+        className=" w-[20px] h-auto absolute top-6 right-6 z-10"
       />
       <Image
         src="/arrowright.svg"
