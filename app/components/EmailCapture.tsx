@@ -1,3 +1,4 @@
+"use client";
 import { FormEvent, useState, CSSProperties } from "react";
 
 const BLUE = "#1A18BB";
