@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from "next/image";
-import { title } from 'process';
 
 type Props = {
   src: string;
@@ -8,17 +7,19 @@ type Props = {
   text: string;
 };
 
-const CardSlider = ({src, title, text} : Props) => {
+const CardSlider = ({ src, title, text }: Props) => {
   return (
     <div className='w-[270px] border-4 border-[#D4C47E] rounded-2xl bg-[#1A18BB] flex flex-col relative overflow-hidden pt-[270px]"'>
+      <div className=" w-[270px] border-4 border-[#D4C47E] rounded-2xl flex justify-center items-center">
+        <Image
+          src={src}
+          alt="Esporte"
+          width={270}
+          height={270}
+          className=" w-full object-cover "
+        />
+      </div>
 
-      <Image
-        src={src}
-        alt="Esporte"
-        width={270}
-        height={270}
-        className=" w-[270px] object-cover"
-      />
       <Image
         src="/BR.svg"
         alt="Esporte"

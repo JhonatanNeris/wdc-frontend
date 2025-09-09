@@ -1,16 +1,23 @@
 import Image from "next/image";
 import CardDescription from "./components/CardDescription";
 import CardSlider from "./components/CardSlider";
-import SliderEmbla from "./components/SliderEmbla";
 import EmailCapture from "./components/EmailCapture";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 
 
 const slides = [
   { id: 1, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
-  { id: 2, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
-  { id: 3, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
-  { id: 4, src: '/esporte1.svg', title: 'Salto na vara', text: 'As manobras pompoarísticas mais avançadas – você vai ter uma ppk, forte, resistente, saudável e com truques de tirar o fôlego, como: chupitar, dedilhar, enlaçar, sugar, e vários outros segredos' },
+  { id: 2, src: '/esporte2.svg', title: 'APERTÊ', text: 'Os melhores golpes para nocautear de uma vez por todas os problemas que atrapalham a sua saúde íntima – como a incontinência, cólicas e os incômodos da menopausa, por exemplo' },
+  { id: 3, src: '/esporte3.svg', title: 'GINÁSTICA NHANHAÍSTICA', text: 'O passo a passo para desenvolver habilidades que farão você liderar no quesito rebolada sensual e manuseio de bolas.' },
+  { id: 4, src: '/esporte4.svg', title: 'SIRIRICLISMO', text: 'Exercícios para aumentar a sua consciência corporal e te ajudar a entender quais são os pontos que mais te dão prazer para que você se torne uma mulher altamente orgástica' },
 ];
 
 
@@ -18,7 +25,7 @@ export default function Home() {
   return (
     <>
       {/* PRIMEIRA SEÇÃO */}
-      <section className="bg-[url('/bg1cel.svg')] bg-cover bg-center h-[100vh] sm:bg-[url('/bg1.png')]">
+      <section className="bg-[url('/bg1cel.svg')] bg-cover bg-bottom bg-no-repeat h-[100vh] sm:bg-[url('/bg1.png')]">
         <div className="container mx-auto max-w-[1200px] px-5 pt-5 pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
           {/* DESKTOP */}
           <div className="hidden sm:flex flex-col mt-30">
@@ -29,9 +36,9 @@ export default function Home() {
               height={300}
               className="mb-6 w-[404px] h-auto"
             />
-            <h2 className="text-[28px] leading-[1.2]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
+            <h2 className="text-[28px] leading-[1.2] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
             <br />
-            <p className="text-[28px] leading-[1.2]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
+            <p className="text-[28px] leading-[1.2]  text-[#fff]"><span className="text-[28px] font-extrabold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
             {/* form */}
 
@@ -39,7 +46,7 @@ export default function Home() {
               <EmailCapture color="#D4C47E" />
             </div>
 
-            <span className="uppercase text-[12px] mt-4">
+            <span className="uppercase text-[12px] mt-4  text-[#fff]">
               Não se preocupe, seus dados estão protegidos de acordo com a lei LGPD.
             </span>
           </div>
@@ -58,7 +65,7 @@ export default function Home() {
 
             <div className="w-full my-5">
               <EmailCapture color="#D4C47E" />
-            </div>            
+            </div>
           </div>
         </div>
       </section>
@@ -91,15 +98,27 @@ export default function Home() {
               {/* SLIDER */}
 
 
-              <SliderEmbla slides={slides} />
+              {/* <SliderEmbla slides={slides} /> */}
+
+              <Carousel>
+                <CarouselContent>
+                  {slides.map((s) => (
+                    <CarouselItem key={s.id}>
+                      <CardSlider src={s.src} title={s.title} text={s.text} />
+                    </CarouselItem>))
+                  }
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
 
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* TERCEIRA SEÇÃO  - MOBILE*/}
-      <section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center sm:hidden">
+      < section className="bg-[url('/Rectangle1597.svg')] bg-cover bg-center sm:hidden" >
         <div className="container mx-auto pt-5 pb-10 text-center">
           <div className="flex flex-col items-center px-[20px]">
             <h2 className="text-center text-[#1A18BB] font-bold text-[18px]">Para aprender tudo isso e treinar comigo, ao vivo, todos os exercícios do meu curso de Ginástica Íntima, basta cadastrar o seu e-mail gratuitamente.</h2>
@@ -108,10 +127,10 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </section >
 
       {/* QUARTA SEÇÃO */}
-      <section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative">
+      < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative" >
         <Image
           src="/medal.svg"
           alt="Medalhas"
@@ -163,10 +182,10 @@ export default function Home() {
           />
 
         </div>
-      </section>
+      </section >
 
       {/* QUARTA SEÇÃO  */}
-      <section className="bg-[#1A18BB] bg-cover bg-center">
+      < section className="bg-[#1A18BB] bg-cover bg-center" >
         <div className="container max-w-[1200px] mx-auto">
           <div className="flex flex-col items-center px-[20px] sm:flex-row sm:grid sm:grid-cols-2  sm:text-left sm:items-center">
             <div className="flex flex-col sm:flex-row sm:gap-10 sm:items-center">
@@ -177,7 +196,7 @@ export default function Home() {
                 height={50}
                 className="mx-auto mb-4 w-[50px] h-auto  hidden sm:block"
               />
-              <div>
+              <div className="text-white">
                 {/* somente desktop */}
                 <h2 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h2>
 
@@ -199,10 +218,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* FOOTER */}
-      <footer className="bg-[#D4C47E]">
+      < footer className="bg-[#D4C47E]" >
         <div className="container mx-auto max-w-[1200px] text-black p-5 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
           <p>suporte@mulheresbemresolvidas.com.br | CNPJ: 23.705.563.0001/80. SHTN Bloco D RUV, SHCS CLS 216 - Asa Sul, Brasília - DF, 70294-530</p>
           <Image
@@ -214,7 +233,7 @@ export default function Home() {
           />
           <p>Política de privacidade | Termos de uso © 2022 Todos os direitos reservados</p>
         </div>
-      </footer>
+      </footer >
 
 
     </>
