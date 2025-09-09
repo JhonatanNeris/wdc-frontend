@@ -36,6 +36,7 @@ export default function Home() {
               width={300}
               height={300}
               className="mb-6 w-[404px] h-auto"
+              priority
             />
             <h2 className="text-[28px] leading-[1.2] font-[300] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula on-line e gratuita, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima para todas as mulheres que se preocupam em desenvolver a própria intimidade.</h2>
             <br />
@@ -202,7 +203,7 @@ export default function Home() {
             alt="Logo"
             width={50}
             height={50}
-            className="mx-auto mb-4 w-[50px] h-auto mt-5"
+            className="mx-auto mb-4 w-[50px] h-[50px] mt-5"
           />
 
         </div>

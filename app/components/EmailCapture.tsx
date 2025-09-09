@@ -3,7 +3,7 @@ import { FormEvent, useState, CSSProperties } from "react";
 
 const BLUE = "#1A18BB";
 
-interface EmailCaptureProps { 
+interface EmailCaptureProps {
   color?: string;
 }
 
@@ -31,8 +31,11 @@ export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
     <form onSubmit={handleSubmit} className="w-full" aria-label="Formulário de captura de e-mail">
       <div className="relative flex items-stretch bg-white shadow-sm overflow-hidden" style={vars}>
         <input
+          id="email"
+          name="email"
           type="email"
           inputMode="email"
+          autoComplete="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
