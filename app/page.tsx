@@ -26,7 +26,7 @@ export default function Home() {
           <div className="hidden sm:flex flex-col">
             <Image
               src="/logofull.svg"
-              alt="Logo"
+              alt="Logo Pompolimpíadas"
               width={300}
               height={300}
               className="mb-6 w-[404px] h-auto"
@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex sm:hidden flex-col items-center gap-3 text-white">
             <Image
               src="/logofull.svg"
-              alt="Logo"
+              alt="Logo Pompolimpíadas"
               width={300}
               height={300}
               className="mx-auto mb-4 w-[180px] h-auto"
@@ -105,7 +105,7 @@ export default function Home() {
               {/* Arrows(sinalizador de slider) - SOMENTE MOBILE */}
               <Image
                 src="/arrowleftandright.svg"
-                alt="Logo"
+                alt="Seta para esquerda e direita"
                 width={300}
                 height={300}
                 className="mx-auto w-[180px] h-auto my-1 sm:hidden"
@@ -189,7 +189,7 @@ export default function Home() {
           {/* arrow - SOMENTE DESKTOP */}
           <Image
             src="/arrowdown.svg"
-            alt="Logo"
+            alt="Círculo branco com uma seta para baixo no centro"
             width={50}
             height={50}
             className="mx-auto mb-4 w-[50px] h-[50px] mt-5"
@@ -208,7 +208,7 @@ export default function Home() {
               {/* arrow - SOMENTE DESKTOP */}
               <Image
                 src="/arrowup.svg"
-                alt="Logo"
+                alt="Linha branca vertical ao centro, interrompida no meio por quatro chevrons brancos apontando para a direita, empilhados."
                 width={50}
                 height={50}
                 className="mx-auto mb-4 w-[50px] h-auto hidden sm:block"
@@ -227,7 +227,7 @@ export default function Home() {
             <div className="relative sm:col-span-6 w-full h-full overflow-visible">
               <Image
                 src="/Catia.svg"
-                alt="Cátia"
+                alt="Cátia Damasceno - Fisioterapeuta"
                 width={820}
                 height={820}
                 className="block w-[240px] sm:w-[545px] h-auto mx-auto pointer-events-none sm:absolute sm:left-0 sm:bottom-0"
@@ -243,7 +243,7 @@ export default function Home() {
           <p>suporte@mulheresbemresolvidas.com.br | CNPJ: 23.705.563.0001/80. SHTN Bloco D RUV, SHCS CLS 216 - Asa Sul, Brasília - DF, 70294-530</p>
           <Image
             src="/logopreto.svg"
-            alt="Logo"
+            alt="Logo Pompolimpíadas cor preta"
             width={800}
             height={800}
             className="mx-auto my-4 w-[180px] h-auto"
