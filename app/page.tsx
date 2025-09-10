@@ -126,7 +126,7 @@ export default function Home() {
       <Divisor />
 
       {/* QUARTA SEÇÃO */}
-      < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10desktop.svg')] relative overflow-hidden" >
+      < section className="bg-[url('/Rectangle10.svg')] bg-cover bg-center sm:bg-[url('/Rectangle10.jpg')] relative overflow-hidden" >
         <Image
           src="/medal.svg"
           alt="Medalhas"
@@ -195,11 +195,12 @@ export default function Home() {
 
       <Divisor />
 
-      {/* QUARTA SEÇÃO  */}
+      {/* QUINTA SEÇÃO  */}
       < section className="bg-[#1A18BB] relative overflow-visible" >
         <div className="container max-w-[1200px] mx-auto">
           <div className="flex flex-col items-center px-[20px] pt-20 sm:pt-0 sm:grid sm:grid-cols-12 sm:text-left sm:items-center">
             <div className="flex flex-col pb-1 sm:py-20 sm:flex-row sm:gap-5 sm:items-center sm:col-span-6">
+              {/* arrow - SOMENTE DESKTOP */}
               <Image
                 src="/arrowup.svg"
                 alt="Logo"
@@ -208,7 +209,7 @@ export default function Home() {
                 className="mx-auto mb-4 w-[50px] h-auto hidden sm:block"
               />
               <div className="text-white leading-[1.23]">
-                {/* somente desktop */}
+                {/* H1 - SOMENTE NO DESKTOP */}
                 <h1 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h1>
                 <br />
                 <p className="text-[18px] sm:text-[24px] font-[300]">Cátia Damasceno é fisioterapeuta especializada em uroginecologia, e iniciou seu trabalho ensinando exercícios de Ginástica Íntima para o fortalecimento da musculatura de mulheres com problema de flacidez íntima após o parto.</p>
