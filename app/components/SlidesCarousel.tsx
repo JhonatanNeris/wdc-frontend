@@ -19,7 +19,7 @@ export default function SlidesCarousel({ slides }: Props) {
     <Carousel opts={{ align: 'start' }}>
       <CarouselContent>
         {slides.map((s) => (
-          <CarouselItem key={s.id} className="basis-[70%] lg:basis-1/4 md:basis-1/3 sm:basis-1/2">
+          <CarouselItem key={s.id} className="basis-[80%] lg:basis-1/4 md:basis-1/3 sm:basis-1/2">
             <CardSlider src={s.src} title={s.title} text={s.text} />
           </CarouselItem>
         ))}
