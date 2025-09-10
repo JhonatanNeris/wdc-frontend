@@ -196,18 +196,18 @@ export default function Home() {
       <Divisor />
 
       {/* QUARTA SEÇÃO  */}
-      < section className="bg-[#1A18BB] bg-cover bg-center" >
+      < section className="bg-[#1A18BB] relative overflow-visible" >
         <div className="container max-w-[1200px] mx-auto">
-          <div className="flex flex-col items-center px-[20px] pt-20 sm:pt-0 sm:flex-row sm:grid sm:grid-cols-2  sm:text-left sm:items-center">
-            <div className="flex flex-col sm:flex-row sm:gap-10 sm:items-center">
+          <div className="flex flex-col items-center px-[20px] pt-20 sm:pt-0 sm:grid sm:grid-cols-12 sm:text-left sm:items-center">
+            <div className="flex flex-col py-20 sm:flex-row sm:gap-5 sm:items-center sm:col-span-6">
               <Image
                 src="/arrowup.svg"
                 alt="Logo"
                 width={50}
                 height={50}
-                className="mx-auto mb-4 w-[50px] h-auto  hidden sm:block"
+                className="mx-auto mb-4 w-[50px] h-auto hidden sm:block"
               />
-              <div className="text-white">
+              <div className="text-white leading-[1.2]">
                 {/* somente desktop */}
                 <h1 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h1>
                 <br />
@@ -218,22 +218,22 @@ export default function Home() {
                 <p className="text-[18px] sm:text-[24px] font-[300]">Atualmente, Cátia é bastante reconhecida por esse trabalho e se tornou a precursora da Ginástica Íntima no Brasil, tornando-se a maior referência nacional no assunto. Já participou de vários programas influentes na mídia, como o “Programa do Jô”, “Tonight Show'' na CNN, “Se Joga”, também da Rede Globo, e vários outros.</p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative sm:col-span-6 w-full h-full overflow-visible">
               <Image
                 src="/Catia.svg"
-                alt="Logo"
-                width={800}
-                height={800}
-                className="mx-auto w-[240px] h-auto sm:w-[575px]"
+                alt="Cátia"
+                width={820}
+                height={820}
+                className="block w-[240px] sm:w-[545px] h-auto mx-auto pointer-events-none sm:absolute sm:left-0 sm:bottom-0"
               />
-            </div>
-          </div>
-        </div>
+            </div> {/* fechamento div catia */}
+          </div> {/* fechamento flex */}
+        </div> {/* fechamento container */}
       </section >
 
       {/* FOOTER */}
       < footer className="bg-[#D4C47E]" >
-        <div className="container mx-auto max-w-[1200px] px-[20px] text-black py-8 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
+        <div className="container mx-auto max-w-[1200px] px-[20px] text-black py-15 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
           <p>suporte@mulheresbemresolvidas.com.br | CNPJ: 23.705.563.0001/80. SHTN Bloco D RUV, SHCS CLS 216 - Asa Sul, Brasília - DF, 70294-530</p>
           <Image
             src="/logopreto.svg"
