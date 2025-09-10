@@ -65,7 +65,7 @@ export default function EmailCapture({ color = "#1A18BB" }: EmailCaptureProps) {
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path d="M5 12h12" />
+            <path d="M6 12h18" />            
             <path d="m12 19-7-7 7-7" />
           </svg>
         </button>
