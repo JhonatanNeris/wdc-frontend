@@ -186,7 +186,7 @@ function CarouselPrevious({
       className={cn(
         "absolute size-8 z-10 rounded-full bg-[#D4C47E] text-[#1A18BB] border-0",
         orientation === "horizontal"
-          ? "top-1/2 left-2 sm:-left-12 -translate-y-1/2"
+          ? "top-1/2 left-2 lg:-left-12 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -216,7 +216,7 @@ function CarouselNext({
       className={cn(
         "absolute size-8 z-10 rounded-full bg-[#D4C47E] text-[#1A18BB] border-0",
         orientation === "horizontal"
-          ? "top-1/2 right-2 sm:-right-12 -translate-y-1/2"
+          ? "top-1/2 right-2 lg:-right-8 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
