@@ -21,9 +21,9 @@ export default function Home() {
     <>
       {/* PRIMEIRA SEÇÃO */}
       <section className="bg-[url('/bg1cel.jpg')] bg-cover bg-bottom bg-no-repeat min-h-[130vh] sm:min-h-[100vh] sm:bg-[url('/bg.jpg')]">
-        <div className="container mx-auto max-w-[1200px] px-5 pt-5 pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
+        <div className="container mx-auto max-w-[1200px] px-5 pt-8 sm:pt-[120px] pb-10 text-center sm:grid sm:grid-cols-2 sm:gap-10 sm:text-left sm:items-center">
           {/* DESKTOP */}
-          <div className="hidden sm:flex flex-col mt-30">
+          <div className="hidden sm:flex flex-col">
             <Image
               src="/logofull.svg"
               alt="Logo"
@@ -32,13 +32,13 @@ export default function Home() {
               className="mb-6 w-[404px] h-auto"
               priority
             />
-            <h2 className="text-[28px] leading-[1.2] font-[300] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula on-line e gratuita, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima para todas as mulheres que se preocupam em desenvolver a própria intimidade.</h2>
+            <h2 className="text-[28px] leading-[1.23] font-[300] text-[#fff]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula on-line e gratuita, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima para todas as mulheres que se preocupam em desenvolver a própria intimidade.</h2>
             <br />
-            <p className="text-[28px] leading-[1.2] font-[300] text-[#fff]"><span className="text-[28px] font-bold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
+            <p className="text-[28px] leading-[1.23] font-[300] text-[#fff]"><span className="text-[28px] font-bold text-[#D4C47E]">Ao vivo, dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live</p>
 
             {/* form */}
 
-            <div className="w-full my-5">
+            <div className="w-full my-4">
               <EmailCapture color="#D4C47E" />
             </div>
 
@@ -58,7 +58,7 @@ export default function Home() {
               priority
             />
             <h1 className="font-bold text-[31px] leading-[1]">Meu Curso de Ginástica Íntima gratuito dia 13/08</h1>
-            <h2 className="font-[300]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
+            <h2 className="font-[300] leading-[1.23] text-[16px]">Entrando no ritmo das Olimpíadas, eu vou realizar uma superaula, onde eu vou ensinar todos os exercícios do meu curso de Ginástica Íntima. <span className="text-[#D4C47E] font-bold">dia 13 de agosto, às 20h, horário de Brasília.</span> Cadastre-se, gratuitamente, e receba o link da live.</h2>
 
             <div className="w-full my-5">
               <EmailCapture color="#D4C47E" />
@@ -69,7 +69,7 @@ export default function Home() {
 
       <Divisor />
 
-      {/* SEGUNDA SEÇÃO */}
+      {/* SEGUNDA SEÇÃO - CAROUSEL*/}
       <section className="bg-[#E5E5E5] bg-[url('/talvez1.jpg')] bg-cover bg-center ">
         <div className="container mx-auto max-w-[1200px] pt-5 pb-5 sm:pb-20 text-center">
           <div className="flex flex-col items-center ">
@@ -78,11 +78,11 @@ export default function Home() {
               <div className="
                   bg-[url('/bgblue.png')] bg-cover bg-center
                   bg-[#1A18BB] bg-blend-overlay
-                  text-center rounded-2xl px-7 py-7 sm:px-15 text-white border-[4px] border-[#D4C47E]
+                  text-center rounded-3xl px-7 py-9 sm:px-15 text-white border-[4px] border-[#D4C47E]
                                     
                 ">
-                <h1 className="font-bold text-[28px] sm:text-[38px] text-[#D4C47E] leading-[1.2]">O que você vai aprender nas Pompolimpíadas</h1>
-                <p className="mt-4 text-white text-[16px] sm:text-[24px] leading-[1.4] font-[300]">
+                <h1 className="font-bold text-[28px] sm:text-[38px] text-[#D4C47E] leading-[1] ">O que você vai aprender nas Pompolimpíadas</h1>
+                <p className="mt-4 text-white text-[16px] sm:text-[24px] leading-[1.23] font-[300]">
                   Participe da superaula gratuita de Ginástica Íntima no dia 13 de
                   agosto, às 20h; e tenha acesso a todo o conteúdo do curso. Aprenda a
                   dominar a arte do aperta e solta e conquiste o ouro em saúde íntima,
@@ -155,10 +155,10 @@ export default function Home() {
               </div>
               <h2 className="text-center text-[#fff] font-bold text-[18px] max-w-[986px]">Existem dois tipos de ppka, aquelas que dominam a modalidade do aperta e solta e as que não praticam nenhum exercício, ou seja, as sedentárias.</h2>
             </div>
-            <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase w-[240px]">
+            <div className="bg-[#D9D9D9] rounded-full border-[2px] border-[#FFD964] p-2 mt-11 text-center text-[#1A18BB] font-extrabold text-[15px] uppercase w-[240px]">
               <span>ppk sedentária</span>
             </div>
-            <div className="grid grid-cols-1 gap-4 mt-5 mb-5 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-4">
+            <div className="grid grid-cols-1 gap-4 mt-6 mb-5 sm:grid-cols-3 sm:gap-x-12 sm:gap-y-4">
               <CardDescription text="Não sente vontade de ter relaçao íntima" color="#fff" />
               <CardDescription text="Não tem lubrificação" color="#fff" />
               <CardDescription text="Tem escape de urina quando faz esforço" color="#fff" />
@@ -166,10 +166,10 @@ export default function Home() {
               <CardDescription text="Sente fortes cólicas menstruais todos os meses" color="#fff" />
               <CardDescription text="Sente dor na hora da relação" color="#fff" />
             </div>
-            <div className="bg-none rounded-full border-[2px] border-[#FFD964] p-2 mt-5 text-center text-[#fff] font-extrabold text-[15px] uppercase w-[240px]">
+            <div className="bg-none rounded-full border-[2px] border-[#FFD964] p-2 mt-11 text-center text-[#fff] font-extrabold text-[15px] uppercase w-[240px]">
               <span>ppk atleta</span>
             </div>
-            <div className="grid grid-cols-1 gap-4 mt-5 mb-5 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-4">
+            <div className="grid grid-cols-1 gap-4 mt-6 mb-5 sm:grid-cols-3 sm:gap-x-12 sm:gap-y-4">
               <CardDescription text="É muito mais molhadinha" />
               <CardDescription text="Sente muito mais vontade de ter relação" />
               <CardDescription text="Não sofre com cólicas menstruais" />
@@ -207,7 +207,7 @@ export default function Home() {
                 height={50}
                 className="mx-auto mb-4 w-[50px] h-auto hidden sm:block"
               />
-              <div className="text-white leading-[1.2]">
+              <div className="text-white leading-[1.23]">
                 {/* somente desktop */}
                 <h1 className="text-[#FFD964] font-bold text-[45px] text-left hidden sm:block">Quem vai te ensinar</h1>
                 <br />
