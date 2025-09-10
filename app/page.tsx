@@ -69,33 +69,38 @@ export default function Home() {
 
       <Divisor />
 
-      {/* SEGUNDA SEÇÃO - CAROUSEL*/}
+       {/* SEGUNDA SEÇÃO - CAROUSEL*/}
       <section className="bg-[#E5E5E5] bg-[url('/talvez1.jpg')] bg-cover bg-center ">
         <div className="container mx-auto max-w-[1200px] pt-5 pb-5 sm:pb-20 text-center">
           <div className="flex flex-col items-center ">
-            <div className="-mt-[60px] flex flex-col gap-6 w-full px-[20px]">
-              {/* Bloco azul */}
-              <div className="
+            <div className="-mt-[60px] flex flex-col gap-6 w-full ">
+              {/* DIV PARA ESPAÇAMENTO NO EIXO X */}
+              <div className="px-[20px]">
+                <div className="
                   bg-[url('/bgblue.png')] bg-cover bg-center
                   bg-[#1A18BB] bg-blend-overlay
                   text-center rounded-3xl px-7 py-9 sm:px-15 text-white border-[4px] border-[#D4C47E]
                                     
                 ">
-                <h1 className="font-bold text-[28px] sm:text-[38px] text-[#D4C47E] leading-[1] ">O que você vai aprender nas Pompolimpíadas</h1>
-                <p className="mt-4 text-white text-[16px] sm:text-[24px] leading-[1.23] font-[300]">
-                  Participe da superaula gratuita de Ginástica Íntima no dia 13 de
-                  agosto, às 20h; e tenha acesso a todo o conteúdo do curso. Aprenda a
-                  dominar a arte do aperta e solta e conquiste o ouro em saúde íntima,
-                  autoestima e prazer. Inscreva-se nas PompOlimpíadas 2024 para alcançar
-                  o topo em todas as suas relações.{" "}
-                  <span className="font-bold text-[#D4C47E]">
-                    Veja abaixo o que você vai aprender:
-                  </span>
-                </p>
+                  <h1 className="font-bold text-[28px] sm:text-[38px] text-[#D4C47E] leading-[1] ">O que você vai aprender nas Pompolimpíadas</h1>
+                  <p className="mt-4 text-white text-[16px] sm:text-[24px] leading-[1.23] font-[300]">
+                    Participe da superaula gratuita de Ginástica Íntima no dia 13 de
+                    agosto, às 20h; e tenha acesso a todo o conteúdo do curso. Aprenda a
+                    dominar a arte do aperta e solta e conquiste o ouro em saúde íntima,
+                    autoestima e prazer. Inscreva-se nas PompOlimpíadas 2024 para alcançar
+                    o topo em todas as suas relações.{" "}
+                    <span className="font-bold text-[#D4C47E]">
+                      Veja abaixo o que você vai aprender:
+                    </span>
+                  </p>
+                </div>
               </div>
 
-              {/* Slider */}
-              <SlidesCarousel slides={slides} />
+              <div className="pl-[20px]">
+                {/* Slider */}
+                <SlidesCarousel slides={slides} />
+              </div>
+
 
               {/* Arrows(sinalizador de slider) - SOMENTE MOBILE */}
               <Image
