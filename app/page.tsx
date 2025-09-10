@@ -199,7 +199,7 @@ export default function Home() {
       < section className="bg-[#1A18BB] relative overflow-visible" >
         <div className="container max-w-[1200px] mx-auto">
           <div className="flex flex-col items-center px-[20px] pt-20 sm:pt-0 sm:grid sm:grid-cols-12 sm:text-left sm:items-center">
-            <div className="flex flex-col py-20 sm:flex-row sm:gap-5 sm:items-center sm:col-span-6">
+            <div className="flex flex-col pb-1 sm:py-20 sm:flex-row sm:gap-5 sm:items-center sm:col-span-6">
               <Image
                 src="/arrowup.svg"
                 alt="Logo"
@@ -233,7 +233,7 @@ export default function Home() {
 
       {/* FOOTER */}
       < footer className="bg-[#D4C47E]" >
-        <div className="container mx-auto max-w-[1200px] px-[20px] text-black py-15 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
+        <div className="container mx-auto max-w-[1200px] px-[20px] text-black py-6 sm:py-15 flex flex-col sm:flex-row sm:gap-8 sm:items-center sm:grid sm:grid-cols-3 text-center sm:text-left">
           <p>suporte@mulheresbemresolvidas.com.br | CNPJ: 23.705.563.0001/80. SHTN Bloco D RUV, SHCS CLS 216 - Asa Sul, Brasília - DF, 70294-530</p>
           <Image
             src="/logopreto.svg"
